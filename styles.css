@@ -1,0 +1,380 @@
+/* STERBAKES COLOR PALETTE */
+
+:root {
+  --mint: #A8CFC8;
+  --cream: #F7F4EE;
+  --warmbeige: #E9D3B2;
+  --softblush: #F3D5CF;
+  --chocolatebrown: #5C4033;
+  --cinnamongold: #D9B06A;
+  --lighterblack: #333333;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #F7F4EE;
+}
+
+/* NAVIGATION */
+
+nav {
+  width: 100%;
+  padding: 28px 6%;
+  border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  list-style: none;
+}
+
+nav a {
+  font-size: 12px;
+  font-weight: 600;
+  font-family:'DM Serif Display', Georgia, serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5C4033;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+/* HERO SECTION */
+
+body, html {
+    height: 100%;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cookies.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.best-sellers {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+.best-sellers-intro {
+  max-width: 300px;
+}
+
+.best-sellers-intro h2 {
+  margin: 0 0 1.5rem;
+  font-family:'DM Serif Display', Georgia, serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.best-sellers-intro p {
+  margin: 0 0 1.75rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* BUTTON */
+
+.bestsellers-btn {
+  display: inline-block;
+  padding: 14px 42px;
+  border: 1px solid #333333;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #333333;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.bestsellers-btn:hover {
+  background-color: #A8CFC8;
+  color: #333333;
+}
+
+/* BEST-SELLERS */
+
+.bestsellers-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.bestseller-item {
+  text-align: center;
+  min-width: 0;
+}
+
+.bestseller-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.bestseller-item p {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  color: #333333;
+  margin-top: 18px;
+}
+
+/* ABOUT PAGE */
+
+h1 {
+  font-family: "Mr Dafoe", "Brush Script MT", cursive;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 13vw, 6.5rem);
+  line-height: 1;
+  margin: 0 0 1.6rem;
+  text-align: center;
+  transform: rotate(-2deg);
+}
+
+.page {
+  max-width: 2000px;          
+  margin: 0 auto;
+  padding: 9px 8% 80px;    
+  box-sizing: border-box;
+}
+
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 0 70px;
+}
+
+.about-images img {
+  width: 100%;
+  max-width: none;           
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(59, 47, 47, 0.12);
+  transition: transform 0.4s ease;
+  margin: 0;
+}
+
+.about-images img:nth-child(2) {
+  margin-top: 36px;
+}
+
+.story p {
+  max-width: 704px;
+  margin: 0 auto 24px;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  text-align: left;
+  color: #5C4033;
+}
+
+.story p:last-of-type {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #e3dbd1;
+  text-align: center;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.35rem;
+  color: #A8CFC8
+}
+
+/* MENU PAGE */
+
+/* MENU SECTION */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  padding: 0 1.5rem;
+  gap: 24px;
+}
+
+.menu-grid h1 {
+  grid-column: 1 / -1;  
+  text-align: center; 
+  margin: 0;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  border-radius: px;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;     
+}
+
+/* PRICE SECTION */
+
+.price-section {
+  padding: 70px 8%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.price-section h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: #fffdf9;
+  border-radius: 14px;
+  overflow: hidden;                              
+  box-shadow: 0 8px 30px rgba(59, 47, 47, 0.08);
+}
+
+.price-table th,
+.price-table td {
+  padding: 16px;
+  border-bottom: 1px solid #d8d1c9;
+}
+
+.price-table th {
+  font-weight: 600;
+}
+
+/* HOW TO ORDER */
+
+.how-to-order {
+  padding: 70px 8%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.how-to-order h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.how-to-order ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  counter-reset: step;
+  list-style: none;
+}
+
+.how-to-order > ol > li {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  position: relative;
+  counter-increment: step;
+  padding: 56px 28px 32px;
+  background: #fffdf9;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(59, 47, 47, 0.08);
+}
+
+.how-to-order ul {
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 2rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* RESOURCES */
+
+.resources {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.resources h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.resource-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.resource-card h2 a {
+  color: #2f5d58;
+  text-decoration: none;
+}
+
+.used-for {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.label {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.transcript {
+  font-weight: bold;
+  color: #2f5d58;
+  text-decoration: none;
+}
+
